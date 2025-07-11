@@ -77,3 +77,28 @@ header nav .navLink::before {
 header nav .navLink:hover::before {
     width: 100%;
 }
+
+.huy-drawer .menu li a {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 48px;
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    width: fit-content;
+    background-image: linear-gradient(transparent calc(100% - 1px), var(--color-2-2) 1px);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+}
+
+.huy-drawer .menu li a:hover {
+    color: var(--color-2-2);
+    background-size: 100% 100%;
+}

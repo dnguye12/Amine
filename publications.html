@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - CoMPHAR</title>
+    <link rel="shortcut icon" href="/public/icon.svg">
+    <meta name="description"
+        content="Le but de ce projet est d'étudier la collaboration multi-partie (qui concerne plusieurs acteurs dans l’interaction) et en communauté hybride (qui fait intervenir des humains, et des agents artificels, représentés sous plusieurs incarnations). Dans ce projet, nous souhaitons étudier les relations et dynamiques de groupe, et l’impact d’une part des compétences sociales des agents et d’autre part de l’incarnation des agents artificiels sur les performances du groupe et la perception du groupe par les humains">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/publications.css">
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class=" sticky top-0 left-0 w-full border-b-7 border-b-[var(--color-2-1)] h-[132px] bg-white z-9999">
+        <nav class="relative container mx-auto flex h-full justify-center items-center">
+            <a href="/"
+                class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-full inline-flex items-center grow shrink-0 max-w-64">
+                <img src="/public/logo.svg" class="h-12 lg:h-20" />
+            </a>
+            <div class="hidden lg:block">
+                <a href="/" class="navLink">Home</a>
+                <a href="/project.html" class="navLink">Le projet</a>
+                <a href="/publications.html" class="navLink">Publications</a>
+                <a href="/team.html" class="navLink">Team</a>
+            </div>
+            <button
+                class="w-14 h-14 flex items-center justify-center bg-[var(--color-2-2)] absolute right-[72px] lg:right-0 top-1/2 -translate-y-1/2 group transition-all hover:brightness-110 cursor-pointer tooltip tooltip-bottom"
+                data-tip="Ouvrir la recherche">
+                <i class="fa-solid fa-magnifying-glass text-xl text-[var(--main)]"></i>
+            </button>
+            <label for="my-drawer"
+                class="w-14 h-14 flex lg:hidden items-center justify-center bg-[var(--main)] transition-all hover:brightness-150 cursor-pointer absolute right-0 top-1/2 -translate-y-1/2">
+                <i class="fa-solid fa-bars text-xl text-white"></i>
+            </label>
+        </nav>
+    </header>
+
+    <div class="drawer huy-drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-side z-9999">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="menu bg-[var(--main)] text-base-content min-h-full w-80 px-4 py-10">
+                <!-- Sidebar content here -->
+                <img src="/public/logo-white.svg" alt="LISN" class=" h-[58px]" />
+                <div class="divider after:bg-neutral-300 after:h-px before:bg-neutral-300 before:h-px"></div>
+                <li><a href="/">Home</a></li>
+                <li><a href="/project.html">Le projet</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/team.html">Team</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="flex-1 flex flex-col">
+        <section class="container mx-auto py-16 max-w-7xl">
+            <div class="mb-16 text-center">
+                <h2 class="mb-6 text-5xl font-medium tracking-tighter text-neutral-900 md:text-7xl">Publications</h2>
+                <p class="mx-auto max-w-3xl text-lg text-neutral-700/80 text-center">
+                    Découvrez nos publications du projet CoMPHAR.</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="table table-lg table-zebra">
+                    <tbody>
+                        <tr>
+                            <td>Benamara, A., Clavel, C., Ravenet, B., Sabouret, N., Saunier, J. (Accepté, en cours
+                                d'édition) Exploring the role of embodiment on intimacy perception in a multiparty
+                                collaborative task. In <i>Proceedings of the ACE Workshop for the 24th ACM International
+                                    Conference on Intelligent Virtual Agents (IVA'24)</i>.</td>
+                        </tr>
+                        <tr>
+                            <td>Benamara, A., Martin, J.C., Prigent, E., Ravenet B. Evaluating a Model of Pathological
+                                Affect based on Pedagogical Situations for a Virtual Patient. In <i>Proceedings of the
+                                    23rd ACM International Conference on Intelligent Virtual Agents (IVA'23) (pp. 1-8),
+                                    8 pages. (Oral presentation on 20/09/2023)</i>. <b>Best Paper Award</b>.</td>
+                        </tr>
+                        <tr>
+                            <td>Benamara, A., Martin, J-C., Prigent, E., Vanderstichel, H., Chaby, L., Chetouani, M.,
+                                Zagdoun, J., Dacunha, S., Ravenet, B. (2022, May) COPAlz: A Computational Model of
+                                Pathological Appraisal Biases for an Interactive Virtual Alzheimer Patient. In
+                                <i>Proceedings of the 21st International Conference on Autonomous Agents and Multiagent
+                                    Systems (AAMAS) (pp. 72-81). (Oral presentation on 12/05/2022)</i>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Benamara, A., Prigent, E., Martin, J-C., Zagdoun, J., Chaby, L., Chetouani, M., Dacunha,
+                                S., Vanderstichel, H. & Ravenet, B. (2021) Conception des Interactions avec un Patient
+                                Virtuel Alzheimer pour la formation du Personnel Soignant.In <i>32e Conférence
+                                    Francophone sur l'Interaction Homme-Machine (IHM) (pp. 1-12). (Oral presentation on
+                                    16/04/2021)</i>.</td>
+                        </tr>
+                        <tr>
+                            <td>Benamara, A., Ravenet, B., Martin, J. C., Prigent, E. (2022) Adapting The Appraisal Bias
+                                Model Of Emotions For The Design Of An Alzheimer Virtual Patient. In <i>2022 Annual
+                                    Conference of the Society for Affective Science Annual Conference. (Poster on
+                                    01/04/2022)</i>.</td>
+                        </tr>
+                        <tr>
+                            <td>Benamara, A., Prigent, E., Ravenet, B., Martin, J. C. (2021) Un Patient Virtuel
+                                Alzheimer pour la Formation du Personnel Soignant. In <i>Journée FEDEV
+                                    21</i>.<b>Demeny-Vaucanson 2021 Award. 2nd place for best oral communication</b>
+                                (24/06/2021).</td>
+                        </tr>
+                        <tr>
+                            <td>Benamara, A., Ravenet, B., Prigent, E., Chaby, L. & Martin, J. C. (2020) Patient virtuel
+                                Alzheimer: vers une modélisation informatique des pathologies émotionnelles et
+                                expressives. In <i>Workshop sur les Affects, Compagnons Artificiels et Interactions.
+                                    (Poster and oral presentation on 15/10/2021)</i>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[var(--color-1-1)] py-8">
+        <div class="container mx-auto w-full">
+            <div class="flex flex-col-reverse md:flex-row justify-between items-center">
+                <div class="text-center md:text-start">
+                    <p class="block text-sm text-white font-semibold">Projet COMPHAR @ <span>2025</span></p>
+                    <a href="https://webfolio-smoky.vercel.app/" target="_blank"
+                        class="text-[var(--text)] text-sm hover:text-white transition-all hover:scale-105 group">Site
+                        par <span class="text-white font-semibold transition-all">Nguyen Duc Huy</span></a>
+                </div>
+                <img src="public/logo-white.svg" alt="LISN" class="mb-8 md:mb-0 h-[54px] w-auto" />
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

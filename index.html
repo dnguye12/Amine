@@ -24,21 +24,41 @@
         <nav class="relative container mx-auto flex h-full justify-center items-center">
             <a href="/"
                 class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-full inline-flex items-center grow shrink-0 max-w-64">
-                <img src="/public/logo.svg" />
+                <img src="/public/logo.svg" class="h-12 lg:h-20" />
             </a>
-            <div>
+            <div class="hidden lg:block">
                 <a href="/" class="navLink">Home</a>
                 <a href="/project.html" class="navLink">Le projet</a>
-                <a href="/" class="navLink">Publications</a>
+                <a href="/publications.html" class="navLink">Publications</a>
                 <a href="/team.html" class="navLink">Team</a>
             </div>
             <button
-                class="w-14 h-14 flex items-center justify-center bg-[var(--color-2-2)] absolute right-0 top-1/2 -translate-y-1/2 group transition-all hover:brightness-110 cursor-pointer tooltip tooltip-bottom"
+                class="w-14 h-14 flex items-center justify-center bg-[var(--color-2-2)] absolute right-[72px] lg:right-0 top-1/2 -translate-y-1/2 group transition-all hover:brightness-110 cursor-pointer tooltip tooltip-bottom"
                 data-tip="Ouvrir la recherche">
                 <i class="fa-solid fa-magnifying-glass text-xl text-[var(--main)]"></i>
             </button>
+            <label for="my-drawer"
+                class="w-14 h-14 flex lg:hidden items-center justify-center bg-[var(--main)] transition-all hover:brightness-150 cursor-pointer absolute right-0 top-1/2 -translate-y-1/2">
+                <i class="fa-solid fa-bars text-xl text-white"></i>
+            </label>
         </nav>
     </header>
+
+    <div class="drawer huy-drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-side z-9999">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="menu bg-[var(--main)] text-base-content min-h-full w-80 px-4 py-10">
+                <!-- Sidebar content here -->
+                <img src="/public/logo-white.svg" alt="LISN" class=" h-[58px]" />
+                <div class="divider after:bg-neutral-300 after:h-px before:bg-neutral-300 before:h-px"></div>
+                <li><a href="/">Home</a></li>
+                <li><a href="/project.html">Le projet</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/team.html">Team</a></li>
+            </ul>
+        </div>
+    </div>
     <main class="flex-1 flex flex-col">
         <section
             class="relative py-32 bg-white w-full overflow-hidden min-h-[calc(100vh-132px)] flex justify-center items-center">
