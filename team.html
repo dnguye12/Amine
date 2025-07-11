@@ -10,6 +10,9 @@
         content="Le but de ce projet est d'étudier la collaboration multi-partie (qui concerne plusieurs acteurs dans l’interaction) et en communauté hybride (qui fait intervenir des humains, et des agents artificels, représentés sous plusieurs incarnations). Dans ce projet, nous souhaitons étudier les relations et dynamiques de groupe, et l’impact d’une part des compétences sociales des agents et d’autre part de l’incarnation des agents artificiels sur les performances du groupe et la perception du groupe par les humains">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,30 +25,28 @@
         <nav class="relative container mx-auto flex h-full justify-center items-center">
             <a href="/"
                 class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-full inline-flex items-center grow shrink-0 max-w-64">
-                <img src="/public/logo.svg" class="h-12 md:h-20"/>
+                <img src="/public/logo.svg" class="h-12 md:h-20" />
             </a>
             <div>
                 <a href="/" class="navLink">Home</a>
-                <a href="/" class="navLink">Le projet</a>
+                <a href="/project.html" class="navLink">Le projet</a>
                 <a href="/" class="navLink">Publications</a>
                 <a href="/team.html" class="navLink">Team</a>
             </div>
             <button
-                class="w-14 h-14 flex items-center justify-center bg-[var(--color-2-2)] absolute right-0 top-1/2 -translate-y-1/2 group transition-all hover:brightness-110 cursor-pointer">
+                class="w-14 h-14 flex items-center justify-center bg-[var(--color-2-2)] absolute right-0 top-1/2 -translate-y-1/2 group transition-all hover:brightness-110 cursor-pointer tooltip tooltip-bottom" data-tip="Ouvrir la recherche">
                 <i class="fa-solid fa-magnifying-glass text-xl text-[var(--main)]"></i>
-                <div class="opacity-0 group-hover:opacity-100 tooltip">
-                    <p>Ouvrir la</p>
-                    <p>recherche</p>
-                </div>
+
             </button>
         </nav>
     </header>
 
     <main class="flex-1 flex flex-col">
         <section class="container mx-auto py-16">
-            <div class="mb-20 text-center">
+            <div class="mb-16 text-center">
                 <h2 class="mb-6 text-4xl font-bold lg:text-6xl text-neutral-900">Team</h2>
-                <p class="mx-auto max-w-3xl text-lg md:text-xl leading-relaxed text-neutral-700/80">Rencontrez notre équipe du
+                <p class="mx-auto max-w-3xl text-lg md:text-xl leading-relaxed text-neutral-700/80">Rencontrez notre
+                    équipe du
                     groupe Cognition, Perception et Usages (CPU) du Laboratoire Interdisciplinaire des Sciences du
                     Numérique (LISN).</p>
             </div>
@@ -56,46 +57,88 @@
                         <h3 class="name">Amine Benamara</h3>
                         <p class="title">Post-doc</p>
                         <p class="place">Laboratoire Interdisciplinaire des Sciences du Numérique - CNRS</p>
+                        <div class="flex gap-3 mt-4">
+                            <a class="link tooltip" href="https://perso.lisn.upsaclay.fr/wiki/benamara" target="_blank"
+                                data-tip="Site personnel"><i class="fa-solid fa-globe"></i></a>
+                            <a class="link tooltip"
+                                href="https://www.linkedin.com/in/amine-benamara-366458119/?originalSubdomain=fr"
+                                target="_blank" data-tip="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="teamCard group">
                     <div class="teamCardContainer">
                         <img src="/public/ava.png" />
-                        <h3 class="name">Amine Benamara</h3>
-                        <p class="title">Post-doc</p>
+                        <h3 class="name">Nicolas Sabouret</h3>
+                        <p class="title">Professor</p>
                         <p class="place">Laboratoire Interdisciplinaire des Sciences du Numérique - CNRS</p>
+                        <div class="flex gap-3 mt-4">
+                            <a class="link tooltip" href="https://perso.lisn.upsaclay.fr/wiki/benamara" target="_blank"
+                                data-tip="Site personnel"><i class="fa-solid fa-globe"></i></a>
+                            <a class="link tooltip"
+                                href="https://www.linkedin.com/in/amine-benamara-366458119/?originalSubdomain=fr"
+                                target="_blank" data-tip="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="teamCard group">
                     <div class="teamCardContainer">
                         <img src="/public/ava.png" />
-                        <h3 class="name">Amine Benamara</h3>
-                        <p class="title">Post-doc</p>
+                        <h3 class="name">Céline Clavel</h3>
+                        <p class="title">Associate Professor</p>
                         <p class="place">Laboratoire Interdisciplinaire des Sciences du Numérique - CNRS</p>
+                        <div class="flex gap-3 mt-4">
+                            <a class="link tooltip" href="https://perso.lisn.upsaclay.fr/wiki/benamara" target="_blank"
+                                data-tip="Site personnel"><i class="fa-solid fa-globe"></i></a>
+                            <a class="link tooltip"
+                                href="https://www.linkedin.com/in/amine-benamara-366458119/?originalSubdomain=fr"
+                                target="_blank" data-tip="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="teamCard group">
                     <div class="teamCardContainer">
                         <img src="/public/ava.png" />
-                        <h3 class="name">Amine Benamara</h3>
-                        <p class="title">Post-doc</p>
+                        <h3 class="name">Brian Ravenet</h3>
+                        <p class="title">Associate Professor</p>
                         <p class="place">Laboratoire Interdisciplinaire des Sciences du Numérique - CNRS</p>
+                        <div class="flex gap-3 mt-4">
+                            <a class="link tooltip" href="https://perso.lisn.upsaclay.fr/wiki/benamara" target="_blank"
+                                data-tip="Site personnel"><i class="fa-solid fa-globe"></i></a>
+                            <a class="link tooltip"
+                                href="https://www.linkedin.com/in/amine-benamara-366458119/?originalSubdomain=fr"
+                                target="_blank" data-tip="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="teamCard group">
                     <div class="teamCardContainer">
                         <img src="/public/ava.png" />
-                        <h3 class="name">Amine Benamara</h3>
-                        <p class="title">Post-doc</p>
-                        <p class="place">Laboratoire Interdisciplinaire des Sciences du Numérique - CNRS</p>
+                        <h3 class="name">Julien Saunier</h3>
+                        <p class="title">Associate Professor</p>
+                        <p class="place">INSA Rouen Normandie</p>
+                        <div class="flex gap-3 mt-4">
+                            <a class="link tooltip" href="https://perso.lisn.upsaclay.fr/wiki/benamara" target="_blank"
+                                data-tip="Site personnel"><i class="fa-solid fa-globe"></i></a>
+                            <a class="link tooltip"
+                                href="https://www.linkedin.com/in/amine-benamara-366458119/?originalSubdomain=fr"
+                                target="_blank" data-tip="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="teamCard group">
                     <div class="teamCardContainer">
                         <img src="/public/ava.png" />
-                        <h3 class="name">Amine Benamara</h3>
-                        <p class="title">Post-doc</p>
-                        <p class="place">Laboratoire Interdisciplinaire des Sciences du Numérique - CNRS</p>
+                        <h3 class="name">Nguyen Duc Huy</h3>
+                        <p class="title">Stagaire</p>
+                        <p class="place">Université Paris Saclay</p>
+                        <div class="flex gap-3 mt-4">
+                            <a class="link tooltip" href="https://perso.lisn.upsaclay.fr/wiki/benamara" target="_blank"
+                                data-tip="Site personnel"><i class="fa-solid fa-globe"></i></a>
+                            <a class="link tooltip"
+                                href="https://www.linkedin.com/in/amine-benamara-366458119/?originalSubdomain=fr"
+                                target="_blank" data-tip="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
